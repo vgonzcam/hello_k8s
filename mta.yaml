@@ -1,0 +1,13 @@
+ID: hello_k8s
+_schema-version: '2.1'
+description: 'Example '
+version: 0.0.1
+
+modules:
+ - name: hello_k8s
+   type: nodejs
+   path: hello_k8s
+   provides:
+    - name: hello_k8s_api
+      properties:
+         url: ${default-url}
